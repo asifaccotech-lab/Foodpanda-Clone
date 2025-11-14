@@ -1,6 +1,7 @@
 import { Sequelize } from 'sequelize';
 
 const {
+  DATABASE_URL,
   DB_HOST = 'localhost',
   DB_PORT = '5432',
   DB_USER = 'postgres',
@@ -9,12 +10,31 @@ const {
   NODE_ENV = 'development'
 } = process.env;
 
-export const sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASS, {
-  host: DB_HOST,
-  port: Number(DB_PORT),
-  dialect: 'postgres',
-  logging: NODE_ENV === 'development' ? console.log : false
-});
+let sequelize;
+
+if (DATABASE_URL) {
+  // Cloud providers usually require SSL
+  sequelize = new Sequelize(DATABASE_URL, {
+    dialect: 'postgres',
+    protocol: 'postgres',
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false
+      }
+    },
+    logging: NODE_ENV === 'development' ? console.log : false
+  });
+} else {
+  sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASS, {
+    host: DB_HOST,
+    port: Number(DB_PORT),
+    dialect: 'postgres',
+    logging: NODE_ENV === 'development' ? console.log : false
+  });
+}
+
+export { sequelize };
 
 export async function connectDatabase() {
   try {

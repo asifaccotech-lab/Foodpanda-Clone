@@ -59,6 +59,14 @@ ER Diagram
 ----------
 See docs/er_diagram.md for the schema overview.
 
+Public Deployment (Recommended)
+-------------------------------
+- The static frontend can be deployed to a CDN; the backend must be hosted on a runtime (e.g., Render).
+- See docs/deploy_backend.md for a step-by-step guide to deploy the backend and wire the frontend to the public API.
+- The static demo (frontend/public) reads an API base from a runtime global:
+  - In frontend/public/index.html, update:
+    window.__API_BASE_URL__ = 'https://your-backend-domain/api';
+
 Development Notes
 -----------------
 - Backend hot-reload via nodemon in Docker
