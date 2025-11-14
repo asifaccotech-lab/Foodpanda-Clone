@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Panda Burgers",
+    "description": "Juicy burgers, fries, and shakes.",
+    "imageUrl": "https://images.unsplash.com/photo-1550547660-d9450f859349",
+    "rating": 4.6,
+    "deliveryFee": 2.99
+  },
+  {
+    "id": 2,
+    "name": "Sunset Pizza",
+    "description": "Artisan pizzas with fresh toppings.",
+    "imageUrl": "https://images.unsplash.com/photo-1548365328-9f547fb285c3",
+    "rating": 4.7,
+    "deliveryFee": 3.49
+  },
+  {
+    "id": 3,
+    "name": "Sakura Sushi",
+    "description": "Traditional and fusion sushi rolls.",
+    "imageUrl": "https://images.unsplash.com/photo-1553621042-f6e147245754",
+    "rating": 4.8,
+    "deliveryFee": 4.99
+  }
+]

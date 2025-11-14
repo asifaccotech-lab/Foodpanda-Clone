@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "cart": "Carrito",
+    "admin": "Admin",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "register": "Registrarse"
+  },
+  "home": {
+    "title": "Descubre restaurantes cerca de ti",
+    "subtitle": "Pide de los mejores lugares con entrega rápida"
+  },
+  "restaurant": {
+    "menu": "Menú",
+    "add_to_cart": "Añadir al carrito",
+    "loading": "Cargando restaurante..."
+  },
+  "cart": {
+    "title": "Tu Carrito",
+    "empty": "Tu carrito está vacío",
+    "checkout": "Pagar"
+  },
+  "auth": {
+    "login_title": "Iniciar sesión",
+    "register_title": "Crear cuenta",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "submit": "Enviar"
+  },
+  "tracking": {
+    "title": "Seguimiento de Pedido",
+    "eta": "Tiempo estimado: {minutes} minutos"
+  },
+  "admin": {
+    "title": "Panel de Administración",
+    "orders": "Pedidos",
+    "update": "Actualizar",
+    "status": "Estado"
+  },
+  "common": {
+    "dark_mode": "Modo oscuro",
+    "language": "Idioma",
+    "loading": "Cargando..."
+  }
+}
