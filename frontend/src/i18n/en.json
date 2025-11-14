@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Home",
+    "cart": "Cart",
+    "admin": "Admin",
+    "login": "Log in",
+    "logout": "Log out",
+    "register": "Register"
+  },
+  "home": {
+    "title": "Discover restaurants near you",
+    "subtitle": "Order from top-rated places with fast delivery"
+  },
+  "restaurant": {
+    "menu": "Menu",
+    "add_to_cart": "Add to cart",
+    "loading": "Loading restaurant..."
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty",
+    "checkout": "Checkout"
+  },
+  "auth": {
+    "login_title": "Log in",
+    "register_title": "Create account",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Submit"
+  },
+  "tracking": {
+    "title": "Order Tracking",
+    "eta": "Estimated time: {minutes} minutes"
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "orders": "Orders",
+    "update": "Update",
+    "status": "Status"
+  },
+  "common": {
+    "dark_mode": "Dark mode",
+    "language": "Language",
+    "loading": "Loading..."
+  }
+}
