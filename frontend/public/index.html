@@ -7,10 +7,17 @@
     <meta name="theme-color" content="#ff2e63" />
     <meta name="description" content="Food Delivery App - modern, accessible, and fast." />
     <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Food Delivery App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <!-- React 18 UMD (CDN) for static hosting -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <!-- Our lightweight static app (fallback for demo hosting) -->
+    <script src="/app.js"></script>
   </body>
 </html>
