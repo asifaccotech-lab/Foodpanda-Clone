@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0d0f1a" />
   <meta name="description" content="Portfolio of Asif Ali Khan — Software Engineer" />
-  <title>Asif Ali Khan — Software Engineer</title>
+  <title>Asif Ali Khan — Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  >
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,120 +32,98 @@
   </div>
 
   <header class="header">
-    <a class="logo" href="#home" aria-label="Go to top">
-      <span class="logo-mark">AK</span>
-      <span class="logo-text">Asif Ali Khan</span>
-    </a>
-    <nav class="nav">
-      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation"><i class='bx bx-menu'></i></button>
-      <ul id="navList" class="nav-list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact" class="cta">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="d-flex align-items-center justify-content-between">
+      <a class="logo" href="index.html" aria-label="Go to home">
+        <span class="logo-mark">AK</span>
+        <span class="logo-text">Asif Ali Khan</span>
+      </a>
+      <nav class="nav">
+        <button class="nav-toggle d-inline-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
+          <i class='bx bx-menu'></i>
+        </button>
+        <ul id="navList" class="nav-list collapse d-md-flex">
+          <li><a href="index.html" class="cta">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main id="home">
     <!-- Hero -->
     <section class="section hero">
-      <div class="hero-content">
-        <p class="eyebrow reveal">Software Engineer</p>
-        <h1 class="hero-title reveal">
-          Hi, I'm <span class="grad-text">Asif Ali Khan</span><br/>
-          I build elegant, robust software.
-        </h1>
-        <p class="hero-subtitle reveal">
-          Full‑stack problem solver focused on performance, DX, and clean architecture.
-        </p>
-        <div class="hero-actions reveal">
-          <a class="btn primary magnetic" href="#projects">View Projects</a>
-          <a class="btn ghost magnetic" href="#contact">Contact Me</a>
-        </div>
-        <div class="socials reveal">
-          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
-          <a href="mailto:asif@example.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
-        </div>
-      </div>
-      <div class="hero-visual reveal">
-        <div class="avatar">
-          <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=800&auto=format&fit=crop" alt="Abstract tech illustration" />
-        </div>
-        <div class="rings">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container grid-2">
-        <div>
-          <h2 class="section-title reveal">About</h2>
-          <p class="reveal">
-            I'm a software engineer who enjoys crafting systems that scale with clarity.
-            I value thoughtful APIs, maintainable code, and delightful user experiences.
-          </p>
-          <p class="reveal">
-            My work spans frontend, backend, and cloud—turning product ideas into
-            secure, performant solutions with a focus on developer experience.
-          </p>
-          <div class="tag-cloud reveal">
-            <span>TypeScript</span><span>React</span><span>Node.js</span><span>Python</span><span>Go</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span><span>CI/CD</span>
-          </div>
-        </div>
-        <div class="about-card reveal">
-          <div class="about-stats">
-            <div class="stat">
-              <span class="num">6+</span>
-              <span class="label">Years Experience</span>
-            </div>
-            <div class="stat">
-              <span class="num">20+</span>
-              <span class="label">Projects</span>
-            </div>
-            <div class="stat">
-              <span class="num">99.9%</span>
-              <span class="label">Uptime Delivered</span>
-            </div>
-          </div>
-          <p class="fine-print">Numbers are illustrative—replace with your actual stats.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section">
       <div class="container">
-        <h2 class="section-title reveal">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card reveal">
-            <h3>Frontend</h3>
-            <p>React, Next.js, CSS-in-JS, performance, accessibility, animation</p>
+        <div class="row align-items-center g-4">
+          <div class="col-md-7">
+            <p class="eyebrow reveal">Software Engineer</p>
+            <h1 class="hero-title reveal">
+              Hi, I'm <span class="grad-text">Asif Ali Khan</span><br/>
+              I build elegant, robust software.
+            </h1>
+            <p class="hero-subtitle reveal">
+              Full‑stack problem solver focused on performance, developer experience,
+              and clean architecture.
+            </p>
+            <div class="hero-actions reveal">
+              <a class="btn primary magnetic me-2" href="projects.html">View Projects</a>
+              <a class="btn ghost magnetic" href="contact.html">Contact Me</a>
+            </div>
+            <div class="socials reveal">
+              <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+              <a href="mailto:asif@example.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
+            </div>
           </div>
-          <div class="skill-card reveal">
-            <h3>Backend</h3>
-            <p>Node.js, Python, Go, REST/GraphQL, microservices, testing</p>
-          </div>
-          <div class="skill-card reveal">
-            <h3>Cloud & DevOps</h3>
-            <p>AWS, Docker, Terraform, CI/CD, observability, security</p>
-          </div>
-          <div class="skill-card reveal">
-            <h3>Data</h3>
-            <p>PostgreSQL, Redis, streaming, ETL, data modeling</p>
+          <div class="col-md-5">
+            <div class="hero-visual reveal">
+              <div class="avatar">
+                <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=800&auto=format&fit=crop" alt="Abstract tech illustration" />
+              </div>
+              <div class="rings">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
+    <!-- Highlights / quick overview -->
+    <section class="section">
       <div class="container">
-        <h2 class="section-title reveal">Featured Projects</h2>
+        <h2 class="section-title reveal">What I Do</h2>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="skill-card reveal h-100">
+              <h3>Product-focused Engineering</h3>
+              <p>I translate product ideas into reliable systems that feel fast and intuitive.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skill-card reveal h-100">
+              <h3>End-to-end Ownership</h3>
+              <p>From UX to infrastructure, I own features across the stack and lifecycle.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skill-card reveal h-100">
+              <h3>Developer Experience</h3>
+              <p>I care about clean APIs, automation, and tooling so teams can move quickly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects teaser -->
+    <section class="section">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="section-title reveal mb-0">Featured Projects</h2>
+          <a class="btn btn-sm btn-outline-light" href="projects.html">View all</a>
+        </div>
         <div class="projects-grid">
           <article class="project-card reveal">
             <div class="project-media">
@@ -148,10 +134,6 @@
               <p>High-throughput event pipeline with live dashboards, built with Go, Kafka, and React.</p>
               <div class="project-tags">
                 <span>Go</span><span>Kafka</span><span>React</span><span>PostgreSQL</span>
-              </div>
-              <div class="project-actions">
-                <a class="btn tiny" href="#" target="_blank" rel="noopener">Live</a>
-                <a class="btn tiny ghost" href="#" target="_blank" rel="noopener">Code</a>
               </div>
             </div>
           </article>
@@ -166,10 +148,6 @@
               <div class="project-tags">
                 <span>TypeScript</span><span>Node.js</span><span>CLI</span>
               </div>
-              <div class="project-actions">
-                <a class="btn tiny" href="#" target="_blank" rel="noopener">Docs</a>
-                <a class="btn tiny ghost" href="#" target="_blank" rel="noopener">Code</a>
-              </div>
             </div>
           </article>
 
@@ -183,80 +161,26 @@
               <div class="project-tags">
                 <span>AWS</span><span>Lambda</span><span>Terraform</span>
               </div>
-              <div class="project-actions">
-                <a class="btn tiny" href="#" target="_blank" rel="noopener">Case Study</a>
-                <a class="btn tiny ghost" href="#" target="_blank" rel="noopener">Code</a>
-              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
-
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2 class="section-title reveal">Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <div class="dot"></div>
-            <div class="content">
-              <h3>Senior Software Engineer — Company X</h3>
-              <span class="period">2022 — Present</span>
-              <p>Led platform team delivering observability suite and developer portals.</p>
-            </div>
-          </div>
-          <div class="timeline-item reveal">
-            <div class="dot"></div>
-            <div class="content">
-              <h3>Software Engineer — Company Y</h3>
-              <span class="period">2019 — 2022</span>
-              <p>Built data ingestion pipelines and customer‑facing dashboards.</p>
-            </div>
-          </div>
-          <div class="timeline-item reveal">
-            <div class="dot"></div>
-            <div class="content">
-              <h3>BSc Computer Science</h3>
-              <span class="period">2015 — 2019</span>
-              <p>Focused on systems programming and human‑computer interaction.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container contact">
-        <h2 class="section-title reveal">Contact</h2>
-        <p class="reveal">Interested in working together? Let's talk.</p>
-        <form class="contact-form reveal" action="https://formspree.io/f/your-id" method="POST">
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button class="btn primary magnetic" type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer mt-auto">
     <div class="container footer-inner">
       <span>© <span id="year"></span> Asif Ali Khan</span>
       <a href="#home" class="top-link">Back to top</a>
     </div>
   </footer>
 
+  <!-- Bootstrap JS bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
   <script src="script.js" defer></script>
 </body>
 </html>
