@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d0f1a" />
+  <meta name="description" content="Projects — Asif Ali Khan" />
+  <title>Projects — Asif Ali Khan</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  >
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Dynamic backdrop -->
+  <div class="backdrop">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="noise"></div>
+  </div>
+
+  <header class="header">
+    <div class="d-flex align-items-center justify-content-between">
+      <a class="logo" href="index.html" aria-label="Go to home">
+        <span class="logo-mark">AK</span>
+        <span class="logo-text">Asif Ali Khan</span>
+      </a>
+      <nav class="nav">
+        <button class="nav-toggle d-inline-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
+          <i class='bx bx-menu'></i>
+        </button>
+        <ul id="navList" class="nav-list collapse d-md-flex">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="cta">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow reveal">Projects</p>
+        <h1 class="hero-title reveal mb-3">Selected work.</h1>
+        <p class="hero-subtitle reveal">
+          A snapshot of platforms, tools, and experiences I've worked on.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Project preview" />
+            </div>
+            <div class="project-content">
+              <h3>Realtime Analytics Platform</h3>
+              <p>
+                Event-driven analytics stack ingesting millions of events per minute
+                with interactive dashboards and alerts.
+              </p>
+              <div class="project-tags">
+                <span>Go</span><span>Kafka</span><span>React</span><span>PostgreSQL</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn tiny" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn tiny ghost" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1526378722484-bb2c5f6711df?q=80&w=800&auto=format&fit=crop" alt="Project preview" />
+            </div>
+            <div class="project-content">
+              <h3>Developer Experience Toolkit</h3>
+              <p>
+                A tooling suite for scaffolding, testing, and publishing packages with
+                opinionated defaults and automation.
+              </p>
+              <div class="project-tags">
+                <span>TypeScript</span><span>Node.js</span><span>CLI</span><span>Jest</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn tiny" href="#" target="_blank" rel="noopener">Docs</a>
+                <a class="btn tiny ghost" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=800&auto=format&fit=crop" alt="Project preview" />
+            </div>
+            <div class="project-content">
+              <h3>Cloud Cost Optimizer</h3>
+              <p>
+                Automated rightsizing service that analyses usage patterns and
+                schedules infrastructure to cut costs.
+              </p>
+              <div class="project-tags">
+                <span>AWS</span><span>Lambda</span><span>Terraform</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn tiny" href="#" target="_blank" rel="noopener">Case Study</a>
+                <a class="btn tiny ghost" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Project preview" />
+            </div>
+            <div class="project-content">
+              <h3>Design System & Component Library</h3>
+              <p>
+                Built a reusable component library and design tokens powering multiple web apps.
+              </p>
+              <div class="project-tags">
+                <span>React</span><span>Storybook</span><span>TypeScript</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn tiny" href="#" target="_blank" rel="noopener">Storybook</a>
+                <a class="btn tiny ghost" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1526378722484-bb2c5f6711df?q=80&w=800&auto=format&fit=crop" alt="Project preview" />
+            </div>
+            <div class="project-content">
+              <h3>Internal Tools & Dashboards</h3>
+              <p>
+                Suite of dashboards & automations that reduced manual operations work by 40%.
+              </p>
+              <div class="project-tags">
+                <span>Next.js</span><span>Node.js</span><span>PostgreSQL</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn tiny" href="#" target="_blank" rel="noopener">Overview</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=800&auto=format&fit=crop" alt="Project preview" />
+            </div>
+            <div class="project-content">
+              <h3>Experimentation Platform</h3>
+              <p>
+                Feature flagging and A/B testing framework enabling rapid experimentation.
+              </p>
+              <div class="project-tags">
+                <span>Go</span><span>gRPC</span><span>React</span>
+              </div>
+              <div class="project-actions">
+                <a class="btn tiny" href="#" target="_blank" rel="noopener">Overview</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mt-auto">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Asif Ali Khan</span>
+      <a href="#top" class="top-link">Back to top</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
